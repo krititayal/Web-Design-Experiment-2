@@ -1,0 +1,177 @@
+*{
+  box-sizing:border-box
+}
+html{
+  scroll-behavior:smooth
+}
+body{
+  margin:0;
+  background:#f7f6f2;
+  color:#242a24;
+  font:15px/1.7 Arial,sans-serif
+}
+header{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 7vw;
+  border-bottom:1px solid #dedfd8
+}
+.brand{
+  font-weight:bold;
+  color:#253b31;
+  text-decoration:none;
+  font-size:23px
+}
+.brand span{
+  color:#d16e4b
+}
+nav{
+  display:flex;
+  gap:32px
+}
+nav a,footer a{
+  color:inherit;
+  text-decoration:none;
+  font-size:13px
+}
+main{
+  max-width:1120px;
+  margin:auto;
+  padding:0 32px
+}
+.hero{
+  min-height:620px;
+  padding:90px 0 50px;
+  position:relative
+}
+.kicker,.label,article small{
+  font-size:10px;
+  letter-spacing:.13em;
+  font-weight:600;
+  color:#737d70
+}
+.hero h1,h2{
+  font:500 clamp(52px,8vw,88px)/1.03 Georgia,serif;
+  letter-spacing:-.04em;
+  margin:23px 0
+}
+.hero h1 em{
+  color:#587363
+}
+.intro{
+  max-width:470px;
+  color:#62675f;
+  font-size:16px
+}
+.text-link,.email{
+  display:inline-block;
+  margin-top:20px;
+  color:#364e40;
+  text-decoration:none;
+  border-bottom:1px solid #9ba69c;
+  padding-bottom:7px
+}
+.note{
+  position:absolute;
+  bottom:32px;
+  left:0;
+  right:0;
+  border-top:1px solid #dcddd7;
+  padding-top:13px;
+  display:flex;
+  justify-content:space-between;
+  color:#7c8178;
+  font-size:11px
+}
+.section{
+  padding:72px 0;
+  border-top:1px solid #dcddd7;
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:28px
+}
+.section h2{
+  font-size:48px;
+  margin:0 0 22px
+}
+.section p{
+  max-width:630px;
+  color:#62685f;
+  line-height:1.85
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px
+}
+.art{
+  height:160px;
+  margin:12px 0 20px;
+  display:grid;
+  place-items:center;
+  font:55px Georgia,serif
+}
+.one{
+  background:#e4e9df;
+  color:#637967
+}
+.two{
+  background:#eae4dd;
+  color:#9a775e
+}
+.three{
+  background:#eee8ce;
+  color:#b38d43
+}
+article h3{
+  font:21px Georgia,serif;
+  margin:12px 0
+}
+article p{
+  font-size:13px
+}
+article a{
+  color:#3c5446;
+  font-size:12px
+}
+footer{
+  border-top:1px solid #dcddd7;
+  padding:22px 7vw;
+  display:flex;
+  justify-content:space-between;
+  color:#7c8178;
+  font-size:11px
+}
+@media(max-width:700px){
+  header{
+    padding:0 20px
+  }
+  nav{
+    gap:14px
+  }
+  nav a{
+    font-size:11px
+  }
+  .hero{
+    min-height:560px;
+    padding-top:72px
+  }
+  .section{
+    grid-template-columns:1fr;
+    padding:55px 0
+  }
+  .cards{
+    grid-template-columns:1fr
+  }
+  .art{
+    height:145px
+  }
+  footer{
+    gap:12px;
+    flex-wrap:wrap;
+    padding-left:20px;
+    padding-right:20px
+  }
+}
