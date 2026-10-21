@@ -1,177 +1,180 @@
-*{
-  box-sizing:border-box
+/* Shared page styles. */
+body {
+  margin: 0;
+  background: #d9efff;
+  color: #242a24;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
-html{
-  scroll-behavior:smooth
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 7%;
+  border-bottom: 1px solid #dedfd8;
+  background: #edf7ff;
 }
-body{
-  margin:0;
-  background:#f7f6f2;
-  color:#242a24;
-  font:15px/1.7 Arial,sans-serif
+
+.brand {
+  color: #253b31;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
 }
-header{
-  height:76px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 7vw;
-  border-bottom:1px solid #dedfd8
+
+.brand span {
+  color: #d16e4b;
 }
-.brand{
-  font-weight:bold;
-  color:#253b31;
-  text-decoration:none;
-  font-size:23px
+
+nav {
+  display: flex;
+  gap: 20px;
 }
-.brand span{
-  color:#d16e4b
+
+nav a,
+footer a {
+  color: #364e40;
+  text-decoration: none;
 }
-nav{
-  display:flex;
-  gap:32px
+
+nav a:hover,
+footer a:hover {
+  text-decoration: underline;
 }
-nav a,footer a{
-  color:inherit;
-  text-decoration:none;
-  font-size:13px
+
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 0 24px;
 }
-main{
-  max-width:1120px;
-  margin:auto;
-  padding:0 32px
+
+.hero {
+  padding: 70px 0;
 }
-.hero{
-  min-height:620px;
-  padding:90px 0 50px;
-  position:relative
+
+.kicker,
+.label,
+article small {
+  color: #737d70;
+  font-size: 12px;
 }
-.kicker,.label,article small{
-  font-size:10px;
-  letter-spacing:.13em;
-  font-weight:600;
-  color:#737d70
+
+h1,
+h2,
+article h3 {
+  font-family: Georgia, serif;
+  font-weight: normal;
 }
-.hero h1,h2{
-  font:500 clamp(52px,8vw,88px)/1.03 Georgia,serif;
-  letter-spacing:-.04em;
-  margin:23px 0
+
+h1 {
+  font-size: 54px;
 }
-.hero h1 em{
-  color:#587363
+
+.intro {
+  max-width: 500px;
+  color: #62675f;
 }
-.intro{
-  max-width:470px;
-  color:#62675f;
-  font-size:16px
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  padding-top: 12px;
+  border-top: 1px solid #dcddd7;
+  color: #7c8178;
 }
-.text-link,.email{
-  display:inline-block;
-  margin-top:20px;
-  color:#364e40;
-  text-decoration:none;
-  border-bottom:1px solid #9ba69c;
-  padding-bottom:7px
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 45px 0;
+  border-top: 1px solid #dcddd7;
 }
-.note{
-  position:absolute;
-  bottom:32px;
-  left:0;
-  right:0;
-  border-top:1px solid #dcddd7;
-  padding-top:13px;
-  display:flex;
-  justify-content:space-between;
-  color:#7c8178;
-  font-size:11px
+
+.section p {
+  color: #62685f;
 }
-.section{
-  padding:72px 0;
-  border-top:1px solid #dcddd7;
-  display:grid;
-  grid-template-columns:1fr 2fr;
-  gap:28px
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
-.section h2{
-  font-size:48px;
-  margin:0 0 22px
+
+article {
+  padding: 16px;
+  background: #edf7ff;
+  border: 1px solid #d6e7f2;
+
+
 }
-.section p{
-  max-width:630px;
-  color:#62685f;
-  line-height:1.85
+
+.art {
+  display: grid;
+  height: 130px;
+  place-items: center;
+  font-size: 42px;
+
 }
-.cards{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px
+
+.one,
+.two,
+.three { background: #c6e4f8; }
+
+article h3 {
+  font-size: 21px;
 }
-.art{
-  height:160px;
-  margin:12px 0 20px;
-  display:grid;
-  place-items:center;
-  font:55px Georgia,serif
+
+article a {
+  color: #3c5446;
 }
-.one{
-  background:#e4e9df;
-  color:#637967
+
+.email {
+  color: #364e40;
 }
-.two{
-  background:#eae4dd;
-  color:#9a775e
+
+.text-link {
+  display: inline-block;
+  margin-top: 14px;
+  color: #364e40;
 }
-.three{
-  background:#eee8ce;
-  color:#b38d43
+
+footer {
+  border-top: 1px solid #dcddd7;
+  border-bottom: 0;
+  color: #7c8178;
+  font-size: 12px;
 }
-article h3{
-  font:21px Georgia,serif;
-  margin:12px 0
-}
-article p{
-  font-size:13px
-}
-article a{
-  color:#3c5446;
-  font-size:12px
-}
-footer{
-  border-top:1px solid #dcddd7;
-  padding:22px 7vw;
-  display:flex;
-  justify-content:space-between;
-  color:#7c8178;
-  font-size:11px
-}
-@media(max-width:700px){
-  header{
-    padding:0 20px
+
+/* Put the sections and project cards in one column on small screens. */
+@media (max-width: 700px) {
+  header,
+  footer {
+    padding-right: 20px;
+    padding-left: 20px;
   }
-  nav{
-    gap:14px
+
+  nav {
+    gap: 10px;
   }
-  nav a{
-    font-size:11px
+
+  .section,
+  .cards {
+    grid-template-columns: 1fr;
   }
-  .hero{
-    min-height:560px;
-    padding-top:72px
-  }
-  .section{
-    grid-template-columns:1fr;
-    padding:55px 0
-  }
-  .cards{
-    grid-template-columns:1fr
-  }
-  .art{
-    height:145px
-  }
-  footer{
-    gap:12px;
-    flex-wrap:wrap;
-    padding-left:20px;
-    padding-right:20px
+
+  h1 {
+    font-size: 42px;
   }
 }
+
+
+/* Simple shared finish: light blue pages, clear text and plain borders. */
+body { background: #d9efff; color: #263746; }
+main, .app, .shell, .article-body, aside, article, .post { background-color: #eaf6ff; }
+button, .button { background-color: #3676a5; color: #fff; }
+input, button { font: inherit; }
+button { cursor: pointer; }
